@@ -1,0 +1,54 @@
+/*
+*
+CABEÇALHO
+	Autor: George Villeroy Lima
+	Objetivo: Calcular o aumento salarial de um professor
+	Data: 28/03/2024
+*
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+
+  int ano_contratacao;
+  int ano_atual;
+  float salario_base = 0.00;  
+  float salario_atual = 0.00;
+  float reajuste_salario = 0.00;
+
+	const float ganhou_bonus = 0.02;
+
+	printf("digite o ano de inicio");
+    scanf("%d", &ano_contratacao);
+    
+    printf("digite o ano final");
+    scanf("%d", &ano_atual);
+
+    printf("digite o salario base");
+    scanf("%f", &salario_base);
+    
+    printf("digite o salario atual");
+   	scanf("%f", &salario_atual);
+    
+    printf("digite o reajuste de salario");
+    scanf("%f", &reajuste_salario);
+    
+    printf("digite ganhou bonus?");
+    scanf("%f", &ganhou_bonus);
+    
+    salario_atual = salario_base;
+    
+	int i = ano_contratacao;
+	for(i = ano_atual; i > ano_contratacao; i++){
+
+		if(ganhou_bonus);
+		salario_atual = salario_atual + (salario_atual * ganhou_bonus);
+	}
+	
+	 salario_atual = salario_atual + (salario_atual + reajuste_salario);
+	 
+	               return 0;
+	               
+}
